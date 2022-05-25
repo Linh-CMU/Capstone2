@@ -1,0 +1,56 @@
+.Mentor {
+    &__wrapper {
+        display: flex;
+        min-height: 100vh;
+        height: 100%;
+    }
+    &__content {
+        flex: 1;
+        overflow: auto;
+        &__main {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+        }
+        &__avatar {
+            height: 300px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &__name {
+            color: #fff;
+            font-size: 40px;
+            font-family: monospace;
+        }
+        &__menu {
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 70%;
+            width: 100%;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.4) 50%,
+                rgba(0, 0, 0, 0)
+            );
+        }
+        &__info {
+            flex: 1 0 auto;
+        }
+        &__book {
+            flex: 0 1 auto;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+    }
+}

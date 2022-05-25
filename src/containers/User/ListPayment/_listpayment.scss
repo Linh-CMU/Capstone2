@@ -1,0 +1,46 @@
+.MentorDashboard {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+    }
+    &__filter {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                background: #0c6cd4;
+            }
+        }
+    }
+    &__listItem {
+        display: flex;
+        align-items: center;
+        padding: 20px 10px;
+        margin-top: 15px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        &__name {
+            flex: 0 0 30%;
+            font-weight: 700;
+            padding: 0px 10px;
+            font-size: 20px;
+        }
+        &__linkCV {
+            flex: 0 0 40%;
+            padding: 0px 10px;
+        }
+        &__status {
+            justify-content: center;
+            display: flex;
+            flex: 0 0 30%;
+
+        }
+    }
+}

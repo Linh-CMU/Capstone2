@@ -1,0 +1,38 @@
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+.left {
+    display: flex;
+    padding: 35px 0 0 0;
+    margin-left: 900px;
+}
+.icon {
+    padding: 0 15px;
+}
+.overview {
+    background-image: url("../../../assets/images/BookingMentor.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 0;
+    z-index: 1;
+}
+.button_login {
+     position: absolute;
+     top: 550px;
+     left: 900px;
+}
+.register {
+    font-size: 17px;
+    color: white;
+    padding: 0px 60px;
+}

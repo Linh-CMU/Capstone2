@@ -1,0 +1,22 @@
+.MentorLayout {
+    &__wrapper {
+        display: flex;
+        min-height: 100vh;
+        height: 100%;
+    }
+    &__content {
+        flex: 1;
+        overflow: auto;
+    }
+    &__children {
+        justify-content: flex-end;
+    }
+    &__sidebar__link {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+    }
+}

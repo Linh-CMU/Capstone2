@@ -1,0 +1,111 @@
+a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+.Status {
+    color: #fff;
+    font-size: 20px;
+    font-family: monospace;
+    position: relative;
+    padding-left: 20px;
+
+    .ListMentor__content__list & {
+        color: #000;
+        font-size: 14px;
+        padding-left: 13px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
+    &--active::before {
+        background: #00bcd4;
+    }
+    &--pending::before {
+        background: #ff9800;
+    }
+    &--payment::before {
+        background: #9c27b0;
+    }
+    &--booked::before {
+        background: #4caf50;
+    }
+    &--done::before {
+        background: #424242;
+    }
+    &--reject::before {
+        background: #f44336;
+    }
+}
+.ButtonStatus {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: 2px solid;
+
+    &--active {
+        border-color: #00bcd4 !important;
+        background: #00bcd4 !important;
+    }
+    &--pending {
+        border-color: #ff9800 !important;
+        background: #ff9800 !important;
+    }
+    &--payment {
+        border-color: #9c27b0 !important;
+        background: #9c27b0 !important;
+    }
+    &--booked {
+        border-color: #4caf50 !important;
+        background: #4caf50 !important;
+    }
+    &--done {
+        border-color: #424242 !important;
+        background: #424242 !important;
+    }
+    &--reject {
+        border-color: #f44336 !important;
+        background: #f44336 !important;
+    }
+}
+.ModalBox {
+    max-width: 650px;
+    width: 100%;
+    background-color: #fff;
+    outline: none;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.bg {
+    &--active {
+        background: #00bcd4 !important;
+    }
+    &--pending {
+        background: #ff9800 !important;
+    }
+    &--payment {
+        background: #9c27b0 !important;
+    }
+    &--booked {
+        background: #4caf50 !important;
+    }
+    &--done {
+        background: #424242 !important;
+    }
+    &--reject {
+        background: #f44336 !important;
+    }
+}

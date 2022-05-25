@@ -1,0 +1,17 @@
+.ListMentor {
+    &__wrapper {
+        display: flex;
+    }
+    &__content {
+        flex: 1;
+        overflow: auto;
+        &__list {
+            padding: 0 100px 40px 100px;
+            margin: 0px;
+            &__link {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
