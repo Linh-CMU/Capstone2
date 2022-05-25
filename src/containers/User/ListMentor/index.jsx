@@ -62,10 +62,7 @@ const ListMentor = () => {
                                                         <MoreVertIcon />
                                                     </IconButton>
                                                 }
-                                                title={
-                                                    mentor?.userResource
-                                                        ?.userName
-                                                }
+                                                title={`${mentor?.userResource?.firstName} ${mentor?.userResource?.lastName}`}
                                                 subheader={
                                                     <div
                                                         className={`Status Status--${mentor?.status}`}
@@ -86,7 +83,7 @@ const ListMentor = () => {
                                                 <Typography
                                                     variant="body2"
                                                     color="text.secondary"
-                                                    style={{fontSize: "20px", fontWeight: "500"}}
+                                                    style={{ fontSize: "20px", fontWeight: "500" }}
                                                 >
                                                     <WorkIcon />&nbsp;
                                                     {mentor?.specializationResource.description}
