@@ -497,7 +497,7 @@ const UpdateProfile = () => {
 											required
 											fullWidth
 											id="nameEducation"
-											label="Name"
+											label="School"
 											autoFocus
 											value={educationRequests.nameEducation}
 											onChange={(event) => {
@@ -514,13 +514,13 @@ const UpdateProfile = () => {
 											InputProps={{
 												inputProps: {
 													type: 'number',
-													min: 0, max: 100,
+													min: 0, max: 4,
 												},
 											}}
 											required
 											fullWidth
 											id="scoreEducation"
-											label="Score (max: 100)"
+											label="GPA (/4.00)"
 											autoFocus
 											value={educationRequests.scoreEducation}
 											onChange={(event) => {
